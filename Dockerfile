@@ -1,6 +1,6 @@
 FROM python:3.7-slim-buster
 
-RUN apt-get update && apt-get install -y --no-install-recommends apt-transport-https ca-certificates gnupg curl
+RUN apt-get update && apt-get install -y --no-install-recommends apt-transport-https ca-certificates gnupg curl git
 
 RUN echo "deb https://packages.cloud.google.com/apt cloud-sdk main" > /etc/apt/sources.list.d/google-cloud-sdk.list
 RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
